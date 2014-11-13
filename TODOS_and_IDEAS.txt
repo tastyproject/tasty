@@ -1,0 +1,42 @@
+List of requested features:
+- signed GC multiplication
+- FairPlay Circuit with signed integers
+
+Dictionary:
+  - Parties:
+    * C: Client
+    * S: Server
+  - Types:
+    * P: Plain Value
+    * H: Homomorphic Value
+    * G: Garbled Value
+  - Number Formats:
+    * I: Integer
+    * U: Unsigned  
+
+Next steps:
+- Implement conversion protocols for G
+  * S:P -> G
+  * G -> C:P, G -> S:P
+  * C:P -> G (requires OT)
+- Implement GC
+
+Later:
+- implement packing+unpacking for HomomorphicVector -> PlainVector (packing done)
+
+In the following I throw in some ideas for tasty independent of if they make sense or not:
+
+- Garbled values support operations, too: XOR, +, -, *
+
+- Optimization: Packing:
+  * For H->G, H->P, H*H
+  * Also combinations of above? We have packing before and after blinding and can combine these arbitrarily into one ciphertext...
+  * Optimization algorithm (binpacking) to find optimal combinations of what is packed together
+
+- Optimization: Automatic Combination of messages?
+  * Compute minum #moves
+  * maybe even asynchronous communication with sth. like TWISTED?
+
+- Goal: high-level abstraction to get rid of interactions between players:
+  * (U/I)x(S:P/C:P/G/H) and conversions between them
+  * Generic Vectors which hold P/G/H but don't care which type they are

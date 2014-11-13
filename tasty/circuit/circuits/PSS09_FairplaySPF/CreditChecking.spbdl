@@ -1,0 +1,14 @@
+/** 
+ * Check if Alice gets a credit 
+ * using private checking criteria
+ */
+0 input alice [7]  // age
+1 input alice 	   // gender
+2 input alice [16] // credit_req
+3 ppb [compc] out 1 in [0] p [GE 18]
+4 ppb [compc] out 1 in [0] p [L 65]
+5 ppb [bool] out 1 in [4 1] p [AND]
+6 ppb [compc] out 1 in [2] p [L 5000]
+7 ppb [bool] out 1 in [3 5 6] p [AND]
+8 output alice [7] // credit_grant
+9 output bob [7]   // credit_grant

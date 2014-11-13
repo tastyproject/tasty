@@ -1,0 +1,16 @@
+/* 
+ * Player is the player type.
+ * Alice and Bob have input and output.
+ * alice and bob are of type Player. Their output is 1 if alice is richer than bob.
+ */
+program Millionaires{
+  type int = Int<4>;
+
+  type Player = struct {int input, Boolean output};
+
+  function void main (Player alice, Player bob){
+    alice.output = (alice.input > bob.input);
+    bob.output = (alice.input > bob.input);
+  }
+}
+ 

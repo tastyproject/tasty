@@ -1,0 +1,24 @@
+0.1.3: 2011-06-27
+   * fixed issue #3
+   * added --color config flag
+   * added --client-fail-if-no-server flag
+   * added setup_output() method to 'Party' objects. Its the same method as 'output' bound to the name, but will only be present in setup phase.
+
+0.1.2-r3: 2011-05-04
+   * raising ImplementationError when using Garbled with Signed type. see issue #1
+
+0.1.2-r2: 2011-04-06
+   * fixed missing version rewrites in shebang lines
+   * much improved build system for versioned TASTY compilations including bad magic errors with tasty-nodebug
+
+0.1.2-r1: 2011-04-05
+    * rebuild with fixed python version checks
+
+0.1.2: 2011-04-04
+    * now supporting python-2.6 and python-2.7
+
+0.1.1: 2011-04-01
+    * fixed IP socket handling issue reported by Felix Lin. TASTY now supports
+    also IPv4, but defaults to IPv6.
+
+0.1: Initial release of TASTY binaries

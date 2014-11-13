@@ -1,0 +1,55 @@
+**************
+Abstract Costs
+**************
+0 OTs
+Garbled Circuit:
+*****************
+Theoretical Costs
+*****************
+Setup Phase
+-----------
+C:
+S:
+Online Phase
+------------
+C->S: 1.30078125 KiB
+C<-S: 888 B
+C: 
+   3 Paillier Encryptions
+   2 Paillier Decryptions
+S:
+   2 Paillier Encryptions
+**********
+Real Costs
+**********
+Analyzation Phase
+-----------------
+Setup Phase
+-----------
+C->S: 9 B
+C<-S: 9 B
+C: 76.374 ms
+S: 76.374 ms
+Protocol run times:
+Online Phase
+------------
+C->S: 1.6708984375 KiB
+C<-S: 1.185546875 KiB
+S: 90.984 ms
+C: 90.984 ms
+Protocol run times:
+ C: HomomorphicMultiplication-duration 45.573 ms
+ C: socket-duration 4.301 ms
+ C: Transport-duration 11.11 ms
+ S: HomomorphicMultiplication-duration 41.906 ms
+ S: socket-duration 1.144 ms
+ S: Transport-duration 18.919 ms
+--------------------------------
+Total (Analyzation+Setup+Online)
+--------------------------------
+C->S: 1.6796875 KiB
+C<-S: 1.1943359375 KiB
+C:
+    167 ms
+S:
+    174 ms

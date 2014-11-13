@@ -1,0 +1,9 @@
+/**
+ * Check which of two Millionaires is richer
+ */
+0 input alice [30] //Alice's input
+1 input bob [30]   //Bob's input
+2 ppb [comp] out 1 in [0 1] p [GE]
+3 ppb [boolc] out 1 in [2] p [NOR 0]
+4 output alice [2] 
+5 output bob [3]   

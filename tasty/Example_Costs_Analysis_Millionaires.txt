@@ -1,0 +1,79 @@
+# Millionaires problem for 32 bit inputs
+
+******************************
+Abstract Costs
+******************************
+
+32 OTs
+
+Garbled Circuit:
+  31 3-input gates
+   1 2-input non-XOR gate
+
+C<-S:
+  32 garbled bits
+
+
+******************************
+Abstract Instantiated Costs
+******************************
+
+TBD...
+
+
+******************************
+Theoretical Costs
+******************************
+
+Setup Phase
+------------------------------
+C<-S: 12MB
+S->C: 10MB
+C:
+   32 EC multiplications
+S:
+  160 SHA invocations
+   32 EC multiplications
+
+Online Phase:
+------------------------------ 
+C<-S: 12MB
+S->C: 10MB
+C:
+   32 SHA invocations
+   
+
+******************************
+Real Costs
+******************************
+
+Analyzation Phase
+------------------------------ 
+C: 42ms (10ms system + 32ms user)
+S: 12ms ( 2ms system + 10ms user)
+
+Setup Phase
+------------------------------
+S<-C: 16MB
+C->S: 10MB
+C:    42ms (10ms system + 32ms user)
+S:    12ms ( 2ms system + 10ms user)
+
+Online Phase
+------------------------------
+S<-C: 16MB
+C->S:  1MB
+C:    42ms (10ms system + 32ms user)
+S:    12ms ( 2ms system + 10ms user)
+
+------------------------------
+Total (Analyzation+Setup+Online)
+------------------------------
+S<-C: 16MB
+C->S: 32MB
+C:    
+      42ms (10ms system + 32ms user)
+      32MB memory usage
+S:    
+      12ms ( 2ms system + 10ms user)
+      32MB memory usage

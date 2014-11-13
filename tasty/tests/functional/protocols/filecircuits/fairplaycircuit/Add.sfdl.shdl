@@ -1,0 +1,30 @@
+// general info
+// gates: 18
+// wires: 26
+input_player:alice:4:1
+input:alice.input:4
+input_player:bob:4:1
+input:bob.input:4
+
+result_player:alice:1
+result:alice.output:5:8:11:16:21:25
+
+gate:0:8:0:4:6
+gate:1:9:1:5:6
+gate:2:10:0:4:1
+gate:3:11:9:10:6
+gate:4:12:2:6:6
+gate:5:13:1:5:1
+gate:6:14:9:10:1
+gate:7:15:13:14:7
+gate:8:16:12:15:6
+gate:9:17:3:7:6
+gate:10:18:2:6:1
+gate:11:19:12:15:1
+gate:12:20:18:19:7
+gate:13:21:17:20:6
+gate:14:22:3:7:1
+gate:15:23:17:20:1
+gate:16:24:22:23:7
+gate:17:25:17:24:6
+

@@ -1,0 +1,14 @@
+/* 
+ * 4 Bit addition circuit
+ */
+program Millionaires{
+  type int = Int<4>;
+
+  type Alice = struct {int input, int output};
+  type Bob = struct {int input};
+
+  function void main (Alice alice, Bob bob){
+    alice.output = (alice.input + bob.input);
+  }
+}
+

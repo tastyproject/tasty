@@ -1,0 +1,61 @@
+**************
+Abstract Costs
+**************
+0 OTs
+Garbled Circuit:
+    326412 3-input-gates
+    154244 2-input non-XOR gate
+*****************
+Theoretical Costs
+*****************
+Setup Phase
+-----------
+C<-S: 11.0124921799 MiB
+C:
+S:
+   1269800 SHA256-Hashes
+Online Phase
+------------
+C<-S: 36.1875 KiB
+C: 
+    317450 SHA256 Hashes
+S:
+**********
+Real Costs
+**********
+Analyzation Phase
+-----------------
+Setup Phase
+-----------
+C->S: 118 B
+C<-S: 16.4367437363 MiB
+C: 128162.005 ms
+S: 128162.005 ms
+Protocol run times:
+ C: GarbledCircuit-duration 47123.555 ms
+ C: socket-duration 77172.759 ms
+ C: Transport-duration 176.738 ms
+ S: GarbledCircuit-duration 108789.353 ms
+ S: socket-duration 14745.419 ms
+ S: Transport-duration 34.601 ms
+Online Phase
+------------
+C->S: 54 B
+C<-S: 22.173828125 KiB
+S: 11061.47 ms
+C: 11061.47 ms
+Protocol run times:
+ C: GarbledCircuit-duration 11028.918 ms
+ C: socket-duration 2.902 ms
+ C: Transport-duration 9.841 ms
+ S: socket-duration 1.208 ms
+ S: Transport-duration 5.421 ms
+--------------------------------
+Total (Analyzation+Setup+Online)
+--------------------------------
+C->S: 172 B
+C<-S: 16.4583978653 MiB
+C:
+    139223 ms
+S:
+    128174 ms

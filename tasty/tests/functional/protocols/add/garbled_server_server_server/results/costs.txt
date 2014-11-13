@@ -1,0 +1,60 @@
+**************
+Abstract Costs
+**************
+0 OTs
+Garbled Circuit:
+*****************
+Theoretical Costs
+*****************
+Setup Phase
+-----------
+C<-S: 3.0556640625 KiB
+C:
+S:
+   344 SHA256-Hashes
+Online Phase
+------------
+C->S: 2.060546875 KiB
+C<-S: 3.435546875 KiB
+C: 
+    86 SHA256 Hashes
+S:
+**********
+Real Costs
+**********
+Analyzation Phase
+-----------------
+Setup Phase
+-----------
+C->S: 169 B
+C<-S: 4.763671875 KiB
+C: 73.503 ms
+S: 73.503 ms
+Protocol run times:
+ C: GarbledCircuit-duration 28.145 ms
+ C: socket-duration 16.895 ms
+ C: Transport-duration 14.175 ms
+ S: GarbledCircuit-duration 39.106 ms
+ S: socket-duration 5.863 ms
+ S: Transport-duration 9.068 ms
+Online Phase
+------------
+C->S: 1.3974609375 KiB
+C<-S: 2.291015625 KiB
+S: 39.049 ms
+C: 39.049 ms
+Protocol run times:
+ C: GarbledCircuit-duration 8.737 ms
+ C: socket-duration 5.219 ms
+ C: Transport-duration 14.168 ms
+ S: socket-duration 0.963 ms
+ S: Transport-duration 19.183 ms
+--------------------------------
+Total (Analyzation+Setup+Online)
+--------------------------------
+C->S: 1.5625 KiB
+C<-S: 7.0546875 KiB
+C:
+    112 ms
+S:
+    108 ms

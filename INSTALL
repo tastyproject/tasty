@@ -1,0 +1,87 @@
+Dependencies
+============
+
+Dependencies should be automatically pulled in when installing Tasty. If you
+prefer using another installation method for the dependencies, install these
+packages.
+
+- python-2.6 : http://python.org
+- gmpy : http://gmpy.sourceforge.net/
+- epydoc : http://epydoc.sourceforge.net/
+- pylint : http://www.logilab.org/project/pylint/
+
+(WINDOWS)
+- WMI : http://timgolden.me.uk/python/downloads/WMI-1.4.5.zip
+
+Installation
+============
+
+Installation via setuptools::
+
+easy_install -Z tasty
+
+Installation via distutils::
+
+Change current directory to your copy of tasty::
+
+    cd /path/to/tasty
+
+Install into system path::
+
+    python setup.py install
+
+Local developer mode installation::
+
+    python setup.py develop
+
+Getting apidocs
+===============
+In order to read the api docs, you have to generate it first. You will find
+them in docs/api.
+
+e.g. html format::
+
+    python setup.py apidoc
+
+pdf format::
+
+    python setup.py apidoc -f pdf
+
+Testing code
+============
+Optionally run all tests on tasty::
+
+    python setup.py test
+
+We also provide code style validation::
+
+    python setup.py check
+
+Aliases
+=======
+All aliases are defined in setup.cfg
+
+Installs tasty and builds the apidocs in several formats::
+
+    python setup.py all
+
+Process all tests at once::
+
+    python setup.py qa
+
+Using all + qa::
+
+    python setup.py full
+
+Misc
+====
+
+For more information about setup.py commands::
+
+    python setup.py --help-commands
+
+
+Using Tasty
+===========
+
+For further information about using tasty, please see README document.

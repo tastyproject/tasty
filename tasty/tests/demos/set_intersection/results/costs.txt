@@ -1,0 +1,56 @@
+**************
+Abstract Costs
+**************
+0 OTs
+Garbled Circuit:
+*****************
+Theoretical Costs
+*****************
+Setup Phase
+-----------
+C:
+S:
+Online Phase
+------------
+C->S: 1.734375 KiB
+C<-S: 1.30078125 KiB
+C: 
+   4 Paillier Encryptions
+   3 Paillier Decryptions
+S:
+   3 Paillier Encryptions
+**********
+Real Costs
+**********
+C->S: 2.560546875 KiB tasty init overhead
+Analyzation Phase
+-----------------
+C: 177.721 ms
+S: 160.989 ms
+Setup Phase
+-----------
+C->S: 9 B
+C<-S: 9 B
+C: 62.241 ms
+S: 62.241 ms
+Protocol run times:
+Online Phase
+------------
+C->S: 3.7744140625 KiB
+C<-S: 2.87890625 KiB
+S: 2090.218 ms
+C: 2090.218 ms
+Protocol run times:
+ C: socket-duration 1.384 ms
+ C: Transport-duration 2041.432 ms
+ S: socket-duration 0.863 ms
+ S: Transport-duration 0.508 ms
+--------------------------------
+Total (Analyzation+Setup+Online)
+--------------------------------
+C->S: 3.783203125 KiB
+C<-S: 2.8876953125 KiB
+C:
+    2152 ms
+S:
+    166 ms

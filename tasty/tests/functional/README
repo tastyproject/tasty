@@ -1,0 +1,7 @@
+This directory contains the tasty functional test suite. It is used, to ensure that tasty
+works correctly on given reference protocols. To run tastys functional test suite, start
+test_all.py (e.g. python test_all.py)
+
+You may also start each testcase induvidually using the python interpreter.
+
+The executed protocols reside in the subdirectorys of the protocols/ directory.

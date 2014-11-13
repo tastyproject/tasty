@@ -1,0 +1,44 @@
+**************
+Abstract Costs
+**************
+0 OTs
+Garbled Circuit:
+*****************
+Theoretical Costs
+*****************
+Setup Phase
+-----------
+C:
+S:
+Online Phase
+------------
+C: 
+S:
+**********
+Real Costs
+**********
+Analyzation Phase
+-----------------
+Setup Phase
+-----------
+C->S: 9 B
+C<-S: 9 B
+C: 0.098 ms
+S: 0.098 ms
+Protocol run times:
+Online Phase
+------------
+C->S: 0 B
+C<-S: 0 B
+S: 0.308 ms
+C: 0.308 ms
+Protocol run times:
+--------------------------------
+Total (Analyzation+Setup+Online)
+--------------------------------
+C->S: 9 B
+C<-S: 9 B
+C:
+    0 ms
+S:
+    0 ms
