@@ -1,11 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from distribute_setup import use_setuptools
-use_setuptools()
+from setuptools import setup, find_packages
 
 import sys
-from setuptools import find_packages, setup
 from ts_commands import *
 from tasty_version import TASTY_VERSION
 
@@ -20,7 +18,7 @@ setup(
     version=TASTY_VERSION,
     packages=find_packages(),
     requires = [],
-    install_requires = ["gmpy"],
+    install_requires = ["gmpy2"],
     extras_require = {
         "PROFILING" : ["epydoc", "pylint", "figleaf"]
     },
